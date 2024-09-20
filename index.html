@@ -1,0 +1,269 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>Hello Bulma!</title>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bulma@1.0.2/css/bulma.min.css">
+    <style>      
+    </style>    
+  </head>
+  <body>
+  
+    <nav class="navbar has-shadow is-white">
+        <!-- logo /brand -->
+        <div class="navbar-brand">
+            <a href="#" class="navbar-item">
+                <img src="assets/logo.png" alt="site logo" style="max-height: 70px;" class="py-2 px-2">
+            </a>
+            <div class="navbar-burger" id="burger">
+                <span></span>
+                <span></span>
+                <span></span>
+            </div>
+        </div>
+
+        <div class="navbar-menu" id="nav-links">
+            <div class="navbar-end">
+                <a href="#" class="navbar-item">My Account</a>
+                <a href="#" class="navbar-item">Shopping Cart (0)</a>
+            </div>
+        </div>
+    </nav>
+
+    <!-- Breadcrumbs -->
+    <div class="section pt-4 pb-0">
+        <nav class="breadcrumb has-arrow-separator">
+            <ul class="container is-size-7">
+                <li><a href="#" class="has-text-grey">Coeffe</a></li>
+                <li><a href="#" class="has-text-grey">Shop</a></li>
+                <li class="is-active"><a href="#">Docker</a></li>
+            </ul>
+        </nav>
+    </div>
+
+    <section class="section">
+        <div class="container">
+            <div class="columns is-vcentered is-multiline">
+                <div class="column is-3">
+                    <h1 class="is-size-3-mobile is-size-1-desktop title">Docker</h1>
+                    <h1 class="is-size-3-mobile is-size-2 subtitle">Dark Roast</h1>
+                    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Possimus eligendi odit magni. Magni, nostrum eveniet ea delectus quia ab vel ducimus mollitia ullam quis eligendi libero laborum voluptatum explicabo aperiam.</p>
+                </div>
+
+                <div class="column is-6-tablet is-5-desktop is-9-mobile">
+                    <img src="assets/product.png" alt="docker coeffe" class="px-6">
+                </div>
+
+                <div class="column is-12-tablet is-4-desktop">
+                    <div class="is-size-4 mb-4">$10.95</div>
+                    <p class="mb-4">Lorem ipsum dolor sit amet consectetur adipisicing elit. Odit nisi quia ex facere voluptatibus omnis magni! Aperiam sunt architecto dolore quae, laudantium quisquam magnam, veritatis maiores repudiandae asperiores perspiciatis facilis?</p>
+                    <form action="POST">
+                        <div class="field">
+                            <div class="control mb-6">
+                                <div class="select is-dark">
+                                    <select class="is-focused">
+                                        <option value="250">Small (250g)</option>
+                                        <option value="500">Large (500g)</option>
+                                    </select>
+                                </div>
+                            </div>
+                        </div>
+                    </form>
+                    <button class="button is-primary has-text-light">Add to Cart</button>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section class="section">
+        <div class="container">
+            <div class="columns is-8 is-variable">
+                <div class="column is-7-tablet">
+                    <!-- tabbed content -->
+                    <div class="tabs is-boxed">
+                        <ul>
+                            <li class="is-active" data-target="product-details">
+                                <a href="#">Product Details</a>
+                            </li>
+                            <li data-target="delivery-information">
+                                <a href="#">Delivery Information</a>
+                            </li>
+                        </ul>
+                    </div>
+
+                    <div class="px-2" id="tab-content">
+                        <div id="product-details">
+                            <h3 class="is-size-5 title">Product Details</h3>
+                            <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Omnis aspernatur nesciunt facere provident. Ab, sit enim excepturi a velit impedit id inventore odit modi et optio qui rerum alias ut!</p>
+                        </div>
+                        <div id="delivery-information" class="is-hidden">
+                            <h3 class="is-size-5 title">Delivery Information</h3>
+                            <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Omnis aspernatur nesciunt facere provident. Ab, sit enim excepturi a velit impedit id inventore odit modi et optio qui rerum alias ut!</p>
+                        </div>
+                    </div>
+                    
+                </div><!-- .column -->
+
+                <div class="column is-5-tablet">
+                    <div class="message is-dark">
+                        <div class="message-header"><p>Earn Points with the Coffee Club</p>
+                        </div>
+                        <div class="message-body">
+                            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Nesciunt consequatur odio aspernatur voluptatum commodi minima magnam? Et fugit dolores, quidem aliquid obcaecati sunt, veniam mollitia praesentium, architecto soluta pariatur a.</p>
+                            <div class="has-text-centered">
+                                <button class="button is-primary is-large is-rounded has-text-white mt-4" id="signup">Sign Up</button>
+                            </div>
+                        </div>
+
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Cards -->
+    <section class="section is-hidden-mobile">
+        <div class="container">
+            <h3 class="title has-text-centered is-size-4">Related Products</h3>
+            <div class="columns mt-5 is-8 is-variable is-centered">
+                <div class="column is-4-tablet is-3 desktop">
+                    <div class="card">
+                        <div class="card-image has-text-centered px-6">
+                            <img src="assets/p1.png" alt="Related Product">
+                        </div>
+                        <div class="card-content">
+                            <p>$12.95</p>
+                            <p class="title is-size-5">Cortardo Cup</p>
+                        </div>
+                        <footer class="card-footer">
+                            <p class="card-footer-item">
+                                <a href="#" class="has-text-grey">View</a>
+                            </p>
+                        </footer>
+                    </div>
+                </div>
+
+                <div class="column is-4-tablet is-3 desktop">
+                    <div class="card">
+                        <div class="card-image has-text-centered px-6">
+                            <img src="assets/p2.png" alt="Related Product">
+                        </div>
+                        <div class="card-content">
+                            <p>$12.95</p>
+                            <p class="title is-size-5">]Docker Light</p>
+                        </div>
+                        <footer class="card-footer">
+                            <p class="card-footer-item">
+                                <a href="#" class="has-text-grey">View</a>
+                            </p>
+                        </footer>
+                    </div>
+                </div>
+
+                <div class="column is-4-tablet is-3 desktop">
+                    <div class="card">
+                        <div class="card-image has-text-centered px-6">
+                            <img src="assets/p3.png" alt="Related Product">
+                        </div>
+                        <div class="card-content">
+                            <p>$12.95</p>
+                            <p class="title is-size-5">]Docker Light</p>
+                        </div>
+                        <footer class="card-footer">
+                            <p class="card-footer-item">
+                                <a href="#" class="has-text-grey">View</a>
+                            </p>
+                        </footer>
+                    </div>
+                </div>
+            </div><!-- .columns -->
+        </div>
+    </section>
+
+    <!-- Modals -->
+    <div class="modal">
+        <div class="modal-background">
+            <div class="modal-content has-background-white py-5 px-5">
+                <h3 class="title mb-6">Join the Club</h3>
+                <form action="post">
+                    <div class="field">
+                        <label for="name" class="label">Name</label>
+                        <div class="control">
+                            <input type="text" name="name" class="input" placeholder="Name">
+                        </div>
+                    </div>
+                    <div class="field">
+                        <label for="email" class="label">Email</label>
+                        <div class="control">
+                            <input type="email" name="email" class="input" placeholder="Email">
+                        </div>
+                    </div>
+                    <div class="field">
+                        <div class="control">
+                            <label for="terms" class="checkbox">
+                                <input type="checkbox" name="terms">
+                                I agree to the <a href="#">terms & conditions</a>
+                            </label>
+                        </div>
+                    </div>
+                    <div class="mt-6 has-text-centered">
+                        <button class="button is-warning">Sign Up</button>
+                    </div>
+                </form>
+            </div>
+        </div>
+    </div>
+
+    <!-- footer -->
+    <footer class="footer">
+        <div class="content has-text-centered">
+            <p>Copyright 2024 CorpoSense</p>
+        </div>
+    </footer>
+    <script>
+        /* Mobile Menu */
+        window.onload = () => {
+            const burgerIcon = document.querySelector('#burger');
+            const navbarMenu = document.querySelector('#nav-links');
+
+            burgerIcon.addEventListener('click', () => {
+                navbarMenu.classList.toggle('is-active');
+            });
+        }
+
+        /* Tabs */
+        const tabs = document.querySelectorAll('.tabs li');
+        const tabContentBoxes = document.querySelectorAll('#tab-content > div');
+
+        tabs.forEach((tab) => {
+            tab.addEventListener('click', () => {
+                tabs.forEach( item =>  item.classList.remove('is-active'));
+                tab.classList.add('is-active');
+
+                const target = tab.dataset.target;
+                tabContentBoxes.forEach(box => {
+                    if (box.getAttribute('id') === target){
+                        box.classList.remove('is-hidden');
+                    } else {
+                        box.classList.add('is-hidden');
+                    }
+                });
+            })
+        });
+
+        /* Modals */
+        const signupButton = document.querySelector('#signup');
+        const modalBg = document.querySelector('.modal-background')
+        const modal = document.querySelector('.modal');
+
+        signupButton.addEventListener('click', () => {
+            modal.classList.add('is-active');
+        })
+
+        modalBg.addEventListener('click', () => {
+            modal.classList.remove('is-active');
+        });
+    </script>
+  </body>
+</html>
